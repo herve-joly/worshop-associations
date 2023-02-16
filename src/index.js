@@ -1,5 +1,5 @@
 const { User, Post } = require("./models");
-const sequelize = require("./db/connection/");
+const sequelize = require("./db/connection");
 
 async function main() {
   await sequelize.sync({ force: true });
